@@ -318,9 +318,6 @@ export namespace Quark {
                     });
 
                     quarkProcess.on("close", async () => {
-                        if (fs.existsSync(reportPath)) {
-                            showSummaryReport(reportPath);
-                        }
                         resolve();
                     });
 
